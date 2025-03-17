@@ -13,7 +13,7 @@ try {
   sanitizeInput([$providerId, $secretKey]);
 
   // url path values
-  $baseUrl = 'https://api.bridex.qore.page/mock'; //base url
+  $baseUrl = 'https://api.briapidevstudio.dev.bbri.io/mock'; //base url
 
   $response = getAccessToken($providerId, $secretKey, $baseUrl);
 

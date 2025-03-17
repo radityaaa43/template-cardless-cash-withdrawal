@@ -11,7 +11,7 @@ try {
   $clientId = '';
 
   // url path values
-  $baseUrl = 'https://api.bridex.qore.page/mock'; //base url
+  $baseUrl = 'https://api.briapidevstudio.dev.bbri.io/mock'; //base url
   $providerId = ''; // customer key
   $secretKey = ''; // customer secret
 
@@ -32,7 +32,7 @@ try {
 
   // Encode output to prevent XSS
   header('Content-Type: application/json');
-  echo json_encode(['data' => htmlspecialchars($response, ENT_QUOTES, 'UTF-8')], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+  echo $response;
 } catch (InvalidArgumentException $e) {
   error_log('Invalid argument: ' . $e->getMessage());
   echo json_encode(['error' => 'An error occurred. Please check your input.']);
