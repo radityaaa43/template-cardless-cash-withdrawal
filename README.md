@@ -38,16 +38,18 @@ module:
 
 ### Cardless Withdrawal
 ```bash
-1. fill variable $secretKey, eg: 'super_secret'
-2. fill variable $clientId, eg: 'your_client_id'
+1. fill variable $clientId, eg: 'super_secret'
+2. fill variable $providerId, eg: 'client_credentials'
+3. fill variable $secretKey, eg: 'S7zgRMA0rUMf4ddkagpreoECgYEAxRkh'
 3. run command `php src/cardless_withdrawal.php serve`
 ```
 
 ### Cardless Reversal
 ```bash
-1. fill variable $secretKey, eg: 'super_secret'
-2. fill variable $clientId, eg: 'your_client_id'
-3. run command `php src/cardless_reversal.php serve`
+1. fill variable $clientId, eg: 'super_secret'
+2. fill variable $providerId, eg: 'client_credentials'
+3. fill variable $secretKey, eg: 'S7zgRMA0rUMf4ddkagpreoECgYEAxRkh'
+4. run command `php src/cardless_reversal.php serve`
 ```
 
 ## Caution
